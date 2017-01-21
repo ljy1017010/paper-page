@@ -1,0 +1,438 @@
+
+/*  初始化和顶部去空*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'sans-serif', '微软雅黑';
+}
+
+body {
+    background-color: burlywood;
+}
+.wrapper {
+    height: 1326px;
+    width: 900px;
+    background-color: white;
+    margin: auto;
+    padding: 0px 40px;
+}
+
+/*  header*/
+header {
+    font-size: 12px;
+    height: 61px;
+    position: relative;
+    border-bottom: 2px solid #938e8c;
+}
+/*  logo*/
+header .logo {
+    width: 110px;
+    height: 61px;
+    background-color: #D55D5C;
+}
+header .logo p{
+    color: white;
+    //border: solid 1px;
+    position: absolute;
+    width: 110px;
+    bottom: 0;
+    text-align: center;
+}
+
+/*  date*/
+header .date {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    color: #D55D5C;
+}
+
+/*  one*/
+.wrapper section.one {
+    //border: solid 1px;
+    margin-top: 30px;
+    position: relative;
+}
+
+/*  one img-area*/
+.wrapper section.one .img-area{
+    width: 641px;
+    height: 301px;
+    position: relative;
+}
+.wrapper .img-area img{
+    width: 641px;
+    height: 301px;
+}
+.wrapper .img-area .left{
+    width: 191px;
+    height: 301px;
+    background-color: greenyellow;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+.wrapper .img-area .right{
+    width: 191px;
+    height: 301px;
+    background-color: firebrick;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
+/*  one aside*/
+.one .aside {
+    width: 203px;
+    border-top: solid 2px #cc8091;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    margin: 0;
+    padding: 0;
+}
+.one .aside h2 {
+    font-size: 20px;
+    color: #000000;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.one .aside p.info {
+    font-size: 12px;
+    font-style: italic;
+    color: #676767;
+    margin-top: 8px;
+}
+.one .aside p.num {
+    margin-top: 22px;
+    font-size: 110px;
+    font-style: italic;
+    color: #75b86b;
+    font-family: 'Arial';
+}
+
+/*  aside-down*/
+.one .aside .aside-down {
+    margin-top: 5px;
+}
+
+.one .aside .aside-down>p {
+    font-size: 46px;
+    color: #cc8091;
+    display: inline-block;
+}
+.one .second-aside-down {
+    display: inline-block;
+}
+.one .second-aside-down .mark-1{
+    font-size: 20px;
+    color: #cc8091;
+}
+.one .second-aside-down .mark-2 {
+    font-size: 12px;
+    color: #cc8091;
+}
+
+/*two*/
+section.two {
+    width: 641px;
+    //border: solid 1px;
+    margin-top: 30px;
+}
+/*  清除浮动*/
+section.two:after {
+    content: '.';
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+section.two .left,
+section.two .middle,
+section.two .right {
+    width: 200px;
+    //border: solid 1px red;
+    display: inline-block;
+    float: left;
+}
+section.two .left,
+section.two .middle {
+    margin-right: 20px;
+}
+
+section.two h2 {
+    font-size: 16px;
+    text-decoration: underline;
+}
+section.two .left h2 {
+    color: #418c51;
+}
+section.two .middle h2 {
+    color: #d2994f;
+}
+section.two .right h2 {
+    color: #cc7680;
+}
+
+section.two p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #767777;
+    margin-top: 16px;
+    font-family: 'sans-serif', '微软雅黑';
+}
+
+section.two .right ul {
+    list-style: none;
+    margin-top: 16px;
+}
+section.two ul li{
+    font-size: 12px;
+    color: #767777;
+    line-height: 20px;
+}
+section.two ul li span{
+    font-size: 12px;
+    color: #cd4a48;
+    font-style: italic;
+}
+
+
+/*  three*/
+section.three {
+    //border: solid 1px;
+    margin-top: 30px;
+    position: relative;
+}
+
+section.three .left{
+    width: 415px;
+}
+/*  three   title*/
+section.three .left .title{
+    width: 415px;
+    border-bottom: solid 2px #11456b;
+}
+section.three .left .title h1{
+    font-size: 42px;
+    font-family: '黑体';
+    font-weight: bold;
+    color: #11456b;
+}
+section.three .left .title h1 span{
+    font-size: 72px;
+    font-family: '黑体';
+    font-weight: bold;
+    //font-style: italic;
+    color: #75B86B;
+    margin-right: 20px;
+
+}
+section.three .left .title h2{
+    font-size: 33px;
+    font-family: '黑体';
+    font-weight: bold;
+    color: #11456b;
+}
+
+/*  three   content*/
+
+section.three .left .content p{
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'sans-serif', '宋体';
+    color: #767777;
+    text-indent: 2em;
+    margin: 10px 0px;
+}
+section.three .left .content p.first {
+    text-indent: 0em;
+}
+section.three .left .content p.first:first-letter{
+    line-height: 70px;
+    float: left;
+    font-size: 70px;
+    font-family: '微软雅黑';
+    color: #75B86B;
+    //border: solid 1px;
+}
+section.three .left .content img{
+    float: right;
+    margin-left: 13px;
+}
+
+/*  three   right*/
+section.three .right {
+    width: 458px;
+    //border: solid 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*  img-area*/
+section.three .right .img-area{
+    //border: solid 1px;
+    width: 458px;
+    height: 275px;
+    position: relative;
+}
+section.three .right .img-area img{
+    width: 458px;
+    height: 275px;
+    float: left;
+}
+
+section.three .right .img-area img{
+    width: 458px;
+    height: 275px;
+
+}
+
+/*  img-info*/
+section.three .right .img-area .img-info{
+    width: 458px;
+    height: 60px;
+    //border: solid 1px red;
+    position: absolute;
+    bottom: 0;
+    background-color: #909296;
+    opacity: 0.8;
+    line-height: 60px;
+}
+section.three .right .img-area .img-info span{
+    border-right: solid 3px green;
+    height: 44px;
+    display: inline-block;
+    position: absolute;
+    bottom: 8px;
+    margin-left: 20px;
+}
+section.three .right .img-area .img-info p{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 26px;
+    color: white;
+    font-family: '微软雅黑';
+}
+section.three .right .img-area .img-info i{
+    display: inline-block;
+    font-size: 12px;
+    color: green;
+}
+
+/*  right info*/
+section.three .right .info {
+    background-color: #eeedd6;
+    margin-top: 20px;
+}
+section.three .right .info ul{
+    list-style: none;
+    padding: 10px 0;
+    margin-left: 22px;
+    //border: solid 1px;
+}
+section.three .right .info li{
+    font: 16px/40px "宋体";
+    color: #5a5b5b;
+}
+section.three .right .info li:before{
+    content: url("../img/triangle.png");
+    padding-right: 10px;
+}
+
+/*  down-area*/
+section.three .right .info .down-area {
+    //border: solid 1px blue;
+}
+/*  down-area   zero*/
+section.three .right .info .down-area .zero {
+    background-color: #d45d5c;
+    width: 260px;
+    height: 160px;
+    position: relative;
+    display: inline-block;
+}
+/*  down-area   hello*/
+section.three .right .info .down-area .hello{
+    height: 160px;
+    width: 175px;
+    //border: solid 1px;
+    float: right;
+    padding-top: 20px;
+}
+
+/*  /down-area   zero*/
+section.three .right .info .down-area .zero>span{
+    font-size: 110px;
+    font-family: "微软雅黑";
+    color: white;
+    //border: solid 1px red;
+    line-height: 160px;
+}
+section.three .right .info .down-area .zero div{
+    border-left: solid 2px white;
+    height: 86px;
+    margin: auto;
+    position: absolute;
+    left: 0; right:0; top: 0; bottom: 0;
+    margin-left: 70px;
+    padding-left: 10px;
+}
+section.three .right .info .down-area .zero div p{
+    color: white;
+    font-size: 21px;
+    font-style: italic;
+    font-family: "黑体";
+    line-height: 24px;
+}
+section.three .right .info .down-area .zero div span {
+    font-size: 12px;
+    font-family: "黑体";
+    color: white;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/*  /down-area   hello*/
+section.three .right .info .down-area .hello span {
+    font: 72px "黑体";
+    color: #d45d5c;
+}
+section.three .down-area .mark-1 {
+    //border: solid 1px;
+    /*  对span浮动，并设置高度，就能控制住大小*/
+    height: 30px;
+    float: left;
+    margin-top: -18px;
+    margin-left: -41px;
+}
+section.three .down-area .mark-2 {
+    //border: solid 1px;
+    height: 30px;
+    float: right;
+    margin-top: -22px;
+    margin-right: -28px;
+}
+
+section.three .down-area .hello p {
+    font-size: 14px;
+    font-family: "黑体";
+    color: #5a5b5b;
+    line-height: 16px;
+}
+
+/*  footer*/
+footer {
+    border: solid 1px #938e8c;
+    margin-top: 30px;
+}
+footer span {
+    float: right;
+    color: #D55D5C;
+    font-size: 12px;
+}
